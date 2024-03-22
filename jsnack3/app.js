@@ -1,11 +1,7 @@
 console.log('ciao')
 
 /* crea un array di oggetti che rappresentano degli animali. Ogni animale ha un nome, una famiglia e una classe */
-const animale = {
-    nome: 'leone',
-    famiglia: 'felidi',
-    classe: 'mammiferi',
-}
+
 const animali = [
     {nome: 'leone' , famiglia: 'felidi' , classe:'mammiferi'},
     {nome: 'gatto' , famiglia: 'felidi' , classe:'mammiferi'},
@@ -24,10 +20,9 @@ const animali = [
 const listaMammiferi = []
 
 for(let i = 0; i < animali.length; i++){
-    const animale = animali[i]
     
-    if(animale.classe === 'mammiferi'){
-        listaMammiferi.push(animale)
+    if(animali[i].classe === 'mammiferi'){
+        listaMammiferi.push(animali[i])
     }
 }
 
